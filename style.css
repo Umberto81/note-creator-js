@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app{
+    width: 100vw;
+    height: 100vh;
+    background-color: gainsboro;
+    display: flex;
+    align-items: flex-start;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.notes__sidebar{
+    border-right: 1px solid green;
+    padding: 1rem;
+    margin-right: 2rem;
+width: 30vw;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.notes__add {
+    width: 100%;
+  background-color: #13aa52;
+  border: 1px solid #13aa52;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 1rem;
+}
+
+.notes__add:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .notes__add {
+    padding: 10px 30px;
+  }
+}
+
+.notes__list{
+    width: 100%;
+    background-color: #eaeaea;
+    padding: 0.3rem;
+}
+
+.notes__preview{
+    display: flex;
+    flex-direction: column;
+       padding: 1rem;
+}
+
+textarea, input{
+    background-color: gainsboro;
+    outline: none;
+}
+
+.notes__small-title{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.notes__small-updtated{
+    text-align: right;
+    color: gray;
+}
+
+.notes__small-body{
+    margin-bottom: 0.5rem;
+}
+
+.notes__title{
+    width: 100%;
+    border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 3px;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+textarea{
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    overflow: auto;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
