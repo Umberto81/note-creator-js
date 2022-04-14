@@ -117,3 +117,8 @@ textarea{
     -moz-box-shadow: none;
     box-shadow: none;
 }
+
+.notes__list-item--selected{
+    background-color: grey;
+    font-weight: bold;
+}
